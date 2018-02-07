@@ -1,0 +1,192 @@
+#nav {
+     width: 1280px;
+     background-color: #80CED7;
+     position: fixed;
+     list-style:none;
+     z-index: 500 ;
+}
+ #nav ul {
+     list-style: none;
+     width: 100%;
+     margin: 0 0;
+     padding: 0;
+}
+ #nav li {
+     float: left;
+     display: inline;
+}
+ #nav li a {
+     display: block;
+     padding: 8px 35px;
+     text-decoration: none;
+     font-weight: bold;
+     color: #069;
+}
+ #nav li a:hover {
+     color: #069;
+     background-color: #fff;
+}
+ header {
+     display: flex;
+}
+ body {
+     margin: 0;
+     font-weight: 500;
+     font-family: 'HelveticaNeue';
+     max-width: 100%;
+}
+ section {
+     width: 100%;
+     display: table;
+     margin: 0;
+     height: 100vh;
+}
+ #pjt {
+     margin-top: 2%;
+     padding: 40px;
+     box-sizing: border-box;
+     margin-bottom: 20ppx;
+     flex-basis: 30%;
+     
+}
+
+.content-hero 
+{
+    margin: auto;
+}
+
+
+ #pjt p {
+     font-size: 20px;
+}
+ #conclusion {
+     margin-top: 0px;
+     background-color: #373B44;
+     display: flex;
+}
+ .first {
+     padding: 20px;
+     flex: 1;
+     color: #2EC4B6;
+     margin-top: 20px;
+}
+ .second {
+     flex: 1;
+     display: flex;
+     flex-direction: column;
+     margin-top: 25px;
+}
+ .second-a {
+     flex: 1;
+}
+ .second-b {
+     flex:1;
+}
+ .second-c {
+     flex: 1;
+}
+ .second-a,.second-b,.second-c {
+     color: #2EC4B6;
+}
+ .three-column-layout {
+     background-color: #2da895;
+}
+ @media (min-width:850px) {
+     .three-column-layout {
+         display: flex;
+         justify-content: space-between;
+    }
+}
+ .intro {
+     margin-top: 0px;
+     background-color: #373B44;
+     height: 90vh;
+}
+ .content {
+     display: table-cell;
+     vertical-align: middle;
+}
+ h1 {
+     font-size: 3em;
+     display: block;
+     color: white;
+     font-weight: 300;
+}
+ p {
+     font-size: 1.5em;
+     font-weight: 500;
+     color: #C3CAD9;
+}
+ a {
+     font-weight: 700;
+     color: #373B44;
+     position: relative;
+     :hover{
+         opacity: 0.8;
+    }
+     :active {
+         top: 1px;
+    }
+}
+ body, html {
+     height: 100%;
+     width: 100%;
+}
+ a:hover{
+     opacity: 0.8;
+}
+ .hero{
+     height: 100vh;
+     width: 100%;
+     display: flex;
+     background-image: url("../img/photographer.jpg");
+     background-size: cover;
+     margin-top: 35px;
+     background-position: center;
+     background-attachment: fixed;
+     text-align: center;
+}
+ footer{
+     padding:20px;
+     color:#ffffff;
+     background-color:#2da895;
+}
+ footer .container {
+     flex: 1;
+     box-sizing: border-box;
+     width: 20%;
+}
+ footer .container p{
+     text-align: center;
+     
+}
+ footer .contain {
+     margin-left: 50px;
+     flex: 1;
+     box-sizing: border-box;
+     width: 20%;
+}
+ footer .contain ul{
+     margin-left: 100px;
+}
+ footer .contain ul li{
+     display: inline;
+     margin-right: 20px;
+}
+ footer .contain ul li a{
+     text-decoration: none;
+     color: unset;
+}
+ footer .contain ul li a:hover{
+     color: #800000;
+}
+ @media (min-width: 900px){
+     #aboutme .container{
+         display: flex;
+    }
+     #boxes , #twocolumn .container, footer{
+         display: flex;
+         justify-content: center;
+    }
+}
+ 
