@@ -9,31 +9,35 @@
 </head>
 
 <body>
-    <header><!--This is a header. It contains navbar, hero element and text. -->
+    <header>
+        <!--This is a header. It contains navbar, hero element and text. -->
 
-        <div id="nav">  <!-- This is nav section. It has nav-bar.-->
+        <nav id="nav">
+            <!-- This is nav section. It has nav-bar.-->
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Github</a></li>
                 <li><a href="#">Linkedin</a></li>
                 <li><a href="#pjt">Projects</a></li>
                 <li><a href="#conclusion">About Me</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-        </div>
-        <div class="hero"><!--This is the hero section.-->
-            <div class="content-hero">
+        </nav>
+        <section class="hero">
+            <!--This is the hero section.-->
+            <section class="content-hero">
                 <h2>Hi!</h2>
                 <h2>I am a freelance developer with experience on wide variety of technologies.</h2>
                 <h2>You can hire me based on your project requirements.</h2>
-            </div>
-        </div>
+            </section>
+        </section>
     </header>
 
 
-    <section class="three-column-layout">  <!--This is the three verticcal column section-->
-        
-        <div id="pjt">
+    <main class="three-column-layout">
+        <!--This is the three verticcal column section-->
+
+        <article id="pjt">
             <h2>Fine Grained Classification</h2>
             <p>In this project we took the BirdSnap dataset and used pretrained Imagenet model to classify them.</p>
 
@@ -41,8 +45,8 @@
                 We tried 3 different approaches. First we did a dry run, then we tried augmentation of dataset and then lastly we used dropout.
             </p>
 
-        </div>
-        <div id="pjt">
+        </article>
+        <section id="pjt">
             <h2>TweetBot for Airlines</h2>
             <p>
                 In this project we created a tweetbot which analysed the tweets tweeted by the customers to airline for determinig the quality.
@@ -51,8 +55,8 @@
                 For this we used machine learning packages from python libraries such as sci-kit learn, numpy and pandas.
             </p>
 
-        </div>
-        <div id="pjt">
+        </section>
+        <section id="pjt">
             <h2>Sentiment Analysis Using LSTMs</h2>
             <p>
                 In this project , we used LSTM networks with CNN used in preprocessing for analysing sentinment of tweets in Sentiment140 dataset.
@@ -61,10 +65,11 @@
                 For this we first used a CNN to create a n-gram char model where max-pooling was used to determine the best features.
             </p>
 
-        </div>
-    </section>
-    <div id="conclusion">   <!--This section has which has 2 vertical columns where 1 column is having 3 divs-->
-        <div class="first">
+        </section>
+    </main>
+    <section id="conclusion">
+        <!--This section has which has 2 vertical columns where 1 column is having 3 sections-->
+        <section class="first">
             <h2>About me</h2>
             <p>
                 I am from Panchkula, Haryana. I studied till 12th before joining MSRIT in 2014.
@@ -75,47 +80,89 @@
             <p>
                 I like to watch movies and tv-shows. Also I like to run .
             </p>
-        </div>
+        </section>
 
-        <div class="second">
-            <div class="second-a">
-                <h2>
-                    Skills
-                </h2>
+        <section class="second">
+
+            <h2>
+                Skills
+            </h2>
+            <section class="second-a">
                 <h3>Full Stack Developement</h3>
                 <p>I am trained on MEAN stack. I have experience in flask as well.</p>
-            </div>
-            <div class="second-b">
+            </section>
+            <section class="second-b">
                 <h3>Data Science</h3>
                 <p>
                     I have worked on a few projects related to Deep learning as part of my college course.
                 </p>
-            </div>
-            <div class="second-c">
+            </section>
+            <section class="second-c">
                 <h3>Android Developement</h3>
                 <p>I have worked on Android apps and developed them for some startups.
                     <p>
-            </div>
-        </div>
-    </div>
-
-    <footer>    <!--This is the footer section.-->
-        <div class="container">
-            <p>Made by <strong>Chaitanya</strong></p>
-        </div>
-        <div class="contain">
+            </section>
+        </section>
+    </section>
+    <section id="contact">
+        <h2>
+            Have a query?
+        </h2>
+        <h3>
+            Leave the details below!
+        </h3>
+        <form action="#" method="get">
             <ul>
-                <li><a href="#"><i class="fa fa-facebook" style="font-size:21px;"></i></a></li>
-                <li><a href="#"><i class="fa fa-linkedin" style="font-size:21px;"></i></a></li>
-                <li><a href="#"><i class="fa fa-github" style="font-size:21px;"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter" style="font-size:21px;"></i></a></li>
+                <li>
+                    <label for="name">Name</label>
+                    <input id="name" name="name">
+                </li>
+                <li>
+                    <label for="name">Email ID</label>
+                    <input id="name" name="name">
+                </li>
+                <li>
+                    <label for="name">Phone Number</label>
+                    <input id="name" name="name">
+                </li>
+                <li>
+                    <label for="name">Query-Type</label>
+                    <select id="query-type" name="query-type">
+                    <option value="au">Technical</option>
+                    <option value="ca">Regarding a Project</option>
+                    <option value="usa">Other</option>
+                     </select>
+                </li>
+                <li>
+                    <label for="comments">Query</label>
+                    <textarea id="comments" name="comments"></textarea>
+                </li>
+                <li>
+                <input  class="submit-button" type="submit" value="Go!" name="" >
+            </li>
             </ul>
-            <br>
+            
+        </form>
+    </section>
+    <footer>
+        <!--This is the footer section.-->
+        <section class="container">
+            <p>Made by <strong>Chaitanya</strong></p>
+        </section>
+        <section class="contain">
+            <ul>
+                <li><a href="#"><i class="fa fa-envelope" style="font-size:21px; padding-right: 20px;"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin" style="font-size:21px; padding-right: 20px;"></i></a></li>
+                <li><a href="#"><i class="fa fa-github" style="font-size:21px; padding-right: 20px;"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter" style="font-size:21px; padding-right: 20px;"></i></a></li>
+            </ul>
+           </section>
+           <section class="contains"> 
             <ul class="dif">
                 <li><i class="fa fa-google"></i>&nbsp&nbsp chaitanya.dec94@gmail.com</li><br>
                 <li><i class="fa fa-phone"></i>&nbsp&nbsp 8861654599</li>
             </ul>
-        </div>
+        </section>
     </footer>
 
 
